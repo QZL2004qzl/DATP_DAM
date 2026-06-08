@@ -2,11 +2,9 @@
 
 [![GitHub License](https://img.shields.io/github/license/QZL2004qz1/DATP_DAM)](LICENSE)
 
-本仓库是论文 **《思维点和分歧度是模型自我持续学习的依据》** 的官方 PyTorch 实现。
 
 针对深度学习模型在部署后**无法实时持续自我学习**（面临灾难性遗忘与高昂微调成本）以及 Transformer **自注意力机制计算复杂度随序列长度平方级膨胀 ($O(n^2)$)** 的双重挑战，本文受到人类认知科学中**双系统理论（Dual-Process Theory）**的启发，提出了全新的学术与工程框架：**分聚思维点网络（DATP）** 与 **分歧聚合机制（DAM）**。
 
-🎯 **核心开源地址**: [https://github.com/QZL2004qz1/DATP_DAM](https://github.com/QZL2004qz1/DATP_DAM)
 
 ---
 
@@ -33,6 +31,28 @@
 - **快速通道（系统 1）**：审判官判定低风险，直接由冻结基座网络输出，延迟控制在极低水平。
 - **慢速通道（系统 2）**：审判官判定高风险，计算分歧度。若命中已有思维点，则调用局部专家进行**残差补丁修正**；若未命中，则即时创建新思维点进行**在线即时学习**。
 
+#### 🖼️ DATP 架构设计图
+<p align="center">
+  <img src="assets/datp_architecture.png" alt="DATP Architecture" width="85%">
+</p>
+
+---
+
+### 3. DAM 算子与传统 SDPA 机制对比
+DAM 算子通过引入分歧度聚合，将标准自注意力机制（SDPA）的平方级复杂度打破，实现更高效的流式状态更新。
+
+#### 🖼️ 架构机制对比
+<table>
+  <tr>
+    <td align="center"><b>标准自注意力机制 (SDPA)</b></td>
+    <td align="center"><b>分歧聚合机制 (DAM)</b></td>
+  </tr>
+  <tr>
+    <td><img src="assets/sdpa_architecture.png" alt="SDPA Architecture" width="100%"></td>
+    <td><img src="assets/dam_architecture.png" alt="DAM Architecture" width="100%"></td>
+  </tr>
+</table>
+
 ---
 
 ## 📈 实验结果
@@ -46,6 +66,12 @@
 
 ### 1. 环境安装
 ```bash
-git clone [https://github.com/QZL2004qz1/DATP_DAM.git](https://github.com/QZL2004qz1/DATP_DAM.git)
+git clone https://github.com/QZL2004qzl/DATP_DAM.git
 cd DATP_DAM
 pip install -r requirements.txt
+
+# 复现DATP算法结果
+python DATP.py
+
+# 复现DAM算法结果
+python DAM.PY

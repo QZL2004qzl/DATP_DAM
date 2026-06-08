@@ -1,13 +1,12 @@
-[**English**](README.md) | [**中文**](#chinese-version)
----
-<a id="chinese-version"></a>
 # 思维点和分歧度是模型自我持续学习的依据 (DATP & DAM)
 
 [![GitHub License](https://img.shields.io/github/license/QZL2004qz1/DATP_DAM)](LICENSE)
 
+[**English**](README.md) | [**中文**](#chinese-version)
+---
+<a id="chinese-version"></a>
 
 针对深度学习模型在部署后**无法实时持续自我学习**（面临灾难性遗忘与高昂微调成本）以及 Transformer **自注意力机制计算复杂度随序列长度平方级膨胀 ($O(n^2)$)** 的双重挑战，本文受到人类认知科学中**双系统理论（Dual-Process Theory）**的启发，提出了全新的学术与工程框架：**分聚思维点网络（DATP）** 与 **分歧聚合机制（DAM）**。
-
 
 ---
 

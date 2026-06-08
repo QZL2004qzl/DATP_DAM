@@ -1,3 +1,4 @@
+<a id="chinese-version"></a>
 # 思维点和分歧度是模型自我持续学习的依据 (DATP & DAM)
 
 [![GitHub License](https://img.shields.io/github/license/QZL2004qz1/DATP_DAM)](LICENSE)

@@ -2,7 +2,7 @@
 
 [![GitHub License](https://img.shields.io/github/license/QZL2004qz1/DATP_DAM)](LICENSE)
 
-[**中文版本**](#chinese-version) | [**English Version**](#english-version)
+[**中文**](#chinese-version) | [**English**](#english-version)
 
 ---
 

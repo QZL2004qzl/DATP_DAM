@@ -77,4 +77,4 @@ pip install -r requirements.txt
 python DATP.py
 
 # 复现DAM算法结果
-python DAM.PY
+python DAM.py

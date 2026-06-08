@@ -33,7 +33,7 @@
 
 #### 🖼️ DATP 架构设计图
 <p align="center">
-  <img src="assets/datp_architecture.png" alt="DATP Architecture" width="85%">
+  <img src="images/图1.png" alt="DATP Architecture" width="85%">
 </p>
 
 ---
@@ -48,8 +48,8 @@ DAM 算子通过引入分歧度聚合，将标准自注意力机制（SDPA）的
     <td align="center"><b>分歧聚合机制 (DAM)</b></td>
   </tr>
   <tr>
-    <td><img src="assets/sdpa_architecture.png" alt="SDPA Architecture" width="100%"></td>
-    <td><img src="assets/dam_architecture.png" alt="DAM Architecture" width="100%"></td>
+    <td><img src="images/SDPA.png" alt="SDPA Architecture" width="100%"></td>
+    <td><img src="images/DAM.png" alt="DAM Architecture" width="100%"></td>
   </tr>
 </table>
 

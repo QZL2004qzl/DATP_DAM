@@ -8,8 +8,6 @@
 
 <a id="english-version"></a>
 
-## English Version
-
 To address the dual challenges faced by deep learning models after deployment—**the inability to perform real-time, self-sustained learning** (due to catastrophic forgetting and high fine-tuning costs) and the **quadratic scaling of Transformer self-attention computational complexity with sequence length ($O(n^2)$)**—this paper, inspired by the **Dual-Process Theory** from human cognitive science, proposes a novel academic and engineering framework: **Divide-and-Aggregate Thought-Point Network (DATP)** and **Divergence Aggregation Mechanism (DAM)**.
 
 ---

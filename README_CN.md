@@ -1,3 +1,5 @@
+[**English**](README.md) | [**中文**](#chinese-version)
+---
 <a id="chinese-version"></a>
 # 思维点和分歧度是模型自我持续学习的依据 (DATP & DAM)
 

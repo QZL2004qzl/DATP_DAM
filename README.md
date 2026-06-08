@@ -35,6 +35,9 @@
 <p align="center">
   <img src="images/图1.png" alt="DATP Architecture" width="85%">
 </p>
+<p align="center">
+  <img src="images/图2.png" alt="DATP Architecture" width="85%">
+</p>
 
 ---
 
